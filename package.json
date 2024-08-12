@@ -6,7 +6,7 @@
     "clean": "rm -rf dist/*",
     "build": "tsc",
     "start": "node dist/server.js",
-    "dev": "npm run build && npm start",
+    "dev": "tsx watch server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^22.2.0",
+    "tsx": "^4.17.0",
     "typescript": "^5.5.4"
   },
   "dependencies": {
